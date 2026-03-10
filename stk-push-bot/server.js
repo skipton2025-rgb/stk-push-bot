@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
 
 // 🔑 Replace with your Nestlink API key
-const API_KEY = "REPLACE_WITH_YOUR_API_KEY";
+const API_KEY = "e315278c5fd3fef0bb007d0c";
 
 app.post("/send", async (req, res) => {
 
