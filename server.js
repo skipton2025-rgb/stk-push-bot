@@ -8,7 +8,7 @@ app.use(bodyParser.urlencoded({ extended: true }));
 app.use(express.static(__dirname));
 
 // 🔑 Replace with your Nestlink API key
-const API_KEY = "e315278c5fd3fef0bb007d0c";
+const API_KEY = "hmp_3vKffZzPn0Ozi4tAyHB4ASw3yzAXRCLgIh3ClrNY";
 
 app.post("/send", async (req, res) => {
 
@@ -23,7 +23,7 @@ app.post("/send", async (req, res) => {
     try {
 
       await axios.post(
-        "https://api.nestlink.co.ke/runPrompt",
+        "https://api.paynecta.co.ke/runPrompt",
         {
           phone: phone,
           amount: amount,
